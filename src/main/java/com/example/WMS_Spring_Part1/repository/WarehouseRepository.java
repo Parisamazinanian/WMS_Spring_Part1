@@ -193,4 +193,8 @@ public class WarehouseRepository {
         }
         return items;
     }
+
+    public static List<Warehouse> getWarehouseList() {
+        return WAREHOUSE_LIST;
+    }
 }

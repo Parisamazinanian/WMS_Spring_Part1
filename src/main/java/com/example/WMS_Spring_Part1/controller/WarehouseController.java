@@ -36,7 +36,7 @@ public class WarehouseController {
         return warehouseService.getAllItems();
     }
     @GetMapping("/warehouse/getAllItems/{warehouseId}")
-    public List<Item> getItemsByWarehouse(@PathVariable int warehouse){
+    public List<Item> getItemsByWarehouse(@PathVariable ("warehouseId") int warehouse){
         return warehouseService.getItemsByWarehouse(warehouse);
     }
     @GetMapping("/warehouse/getCategories")
@@ -44,7 +44,7 @@ public class WarehouseController {
         return warehouseService.getCategories();
     }
     @GetMapping("/warehouse/getItemsByCategory/{category}")
-    public List<Item> getItemsByCategory(@PathVariable String category){
+    public List<Item> getItemsByCategory(@PathVariable ("category") String category){
         return warehouseService.getItemsByCategory(category);
     }
 

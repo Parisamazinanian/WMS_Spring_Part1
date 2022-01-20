@@ -10,7 +10,7 @@ public class Warehouse {
 
     public Warehouse(int id) {
         this.id = id;
-        stock = new ArrayList<Item>();
+        this.stock = new ArrayList<Item>();
     }
 
 
