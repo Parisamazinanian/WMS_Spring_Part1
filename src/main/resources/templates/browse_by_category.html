@@ -5,7 +5,7 @@
 
     <p><a href="/">Home Page</a></p>
 
-   <!-- <div th:each="category : ${categories}" >
+<!--    <div th:each="category : ${categories}" >
         <a th:text="'List of categories: ' + ${category}" th:href="'/browseByCategory/' + ${category}"></a>
     </div>-->
 
@@ -14,7 +14,7 @@
     <table>
         <tbody>
         <tr th:each="category : ${categories}">
-            <td ><a th:text="'List of categories: ' + ${category}" th:href="'/browseByCategory/' + ${category}"></a></td>
+            <td ><a th:text="'The category of: ' + ${category}" th:href="'/browseByCategory/' + ${category}"></a></td>
         </tr>
         </tbody>
     </table>

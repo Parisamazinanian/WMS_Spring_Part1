@@ -93,7 +93,7 @@ public class WarehouseRepository {
 
         List<Item> allItems = new ArrayList<Item>();
 
-        for (Warehouse warehouse : WAREHOUSE_LIST) {
+        //for (Warehouse warehouse : WAREHOUSE_LIST) {
             for (int i = 0; i < WAREHOUSE_LIST.size(); i++) {
                 List<Item> itemsWarehouse = new ArrayList<Item>();
                 for (Item item : WAREHOUSE_LIST.get(i).getStock()) {
@@ -102,10 +102,9 @@ public class WarehouseRepository {
                 }
                 allItems.addAll(itemsWarehouse);
             }
-
-        }
         return allItems;
-    }
+        }
+
 
     // By Warehouse
 

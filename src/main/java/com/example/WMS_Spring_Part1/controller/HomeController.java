@@ -75,7 +75,7 @@ public class HomeController {
 
         //add the response to the spring ui model.
         model.addAttribute("categories", categoriesResponse);
-        model.addAttribute("itemCount", categoriesResponse.size());
+        model.addAttribute("categoryCount", categoriesResponse.size());
         return "browse_by_category.html";
     }
 
